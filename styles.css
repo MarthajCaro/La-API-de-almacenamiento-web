@@ -21,9 +21,52 @@ h1 {
     color: #333;
 }
 
+h2 {
+    color: #444;
+    font-size: 20px;
+    margin-top: 25px;
+}
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ba87f8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5b2c83;
+}
+
+#totalHoy,
+#totalMes {
+    background-color: #f3eafa;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5b2c83;
+}
+
+
+
+#porCategoria p {
+    background-color: #faf5ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
 }
