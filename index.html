@@ -3,28 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Control de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <h1>Control de Gastos</h1>
 
+    
     <input type="text" id="descripcion" placeholder="Descripción">
 
     <input type="number" id="monto" placeholder="Monto">
 
     <select id="categoria">
-        <option>Comida</option>
-        <option>Transporte</option>
-        <option>Entretenimiento</option>
-        <option>Servicios</option>
-        <option>Otros</option>
+        <option value="Comida">Comida</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Entretenimiento">Entretenimiento</option>
+        <option value="Servicios">Servicios</option>
+        <option value="Otros">Otros</option>
     </select>
 
     <button id="btnAgregar">Agregar Gasto</button>
 
-    
+    <hr>
 
     
+    <h2>Total de Hoy:</h2>
+    <p id="totalHoy">$0</p>
+
+    <h2>Total del Mes:</h2>
+    <p id="totalMes">$0</p>
+
+    
+    <h2>Totales por Categoría:</h2>
+    <div id="porCategoria"></div>
+
+    <hr>
+
+    
+    <h2>Lista de Gastos</h2>
+    <ul id="listaGastos"></ul>
 
     <script src="script.js"></script>
 
