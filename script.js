@@ -1,4 +1,4 @@
-let gastos = [];
+let gastos = JSON.parse(localStorage.getItem("gastosPersonales")) || [];
 
 const descripcion = document.getElementById("descripcion");
 const monto = document.getElementById("monto");
@@ -41,13 +41,6 @@ function agregarGasto() {
     monto.value = "";
 
     actualizarTodo();
-}
-
-
-let datosGuardados = localStorage.getItem("gastosPersonales");
-
-if (datosGuardados) {
-    gastos = JSON.parse(datosGuardados);
 }
 
 
@@ -149,3 +142,4 @@ function mostrarPorCategoria() {
 
 
 actualizarTodo();
+
