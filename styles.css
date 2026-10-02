@@ -2,9 +2,13 @@
 body {
 
     font-family: Arial, sans-serif;
-    background-color: #f2f7f4;
+    background-color: #f4f9f6;
+    /* Patrón de puntos sutiles */
+    background-image: radial-gradient(#2e7d32 0.75px, transparent 0.75px);
+    background-size: 24px 24px;
     margin: 0;
     padding: 20px;
+    min-height: 100vh;
 
 }
 
