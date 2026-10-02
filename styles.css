@@ -138,30 +138,45 @@ hr {
 .resumen {
 
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    margin-bottom: 25px;
 
 }
 
 
 .tarjeta {
-
     flex: 1;
-    background-color: #f3ebff;
-    padding: 15px;
-    border-radius: 12px;
-    text-align: center;
-
+    background: linear-gradient(135deg, #ffffff 0%, #f9f6ff 100%);
+    padding: 22px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eae2f8;
+    border-top: 4px solid #7b4bd4;
+    transition: all 0.3s ease; /* Efecto suave de transición */
 }
 
+/* Efecto hover: la tarjeta se eleva y resalta con sombra */
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(123, 75, 212, 0.15);
+    border-color: #d1baf3;
+}
+
+.tarjeta h2 {
+    margin: 0 0 8px 0;
+    color: #777;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
 
 .tarjeta p {
-
-    font-size: 22px;
+    margin: 0;
+    font-size: 26px;
     font-weight: bold;
-    color: #5b2ca5;
-
+    color: #4a237a; /* Un tono morado más oscuro y elegante */
 }
-
 
 
 /* Categorías */
@@ -170,48 +185,59 @@ hr {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 12px;
 
 }
 
 
 #porCategoria p {
 
-    background-color: #faf7ff;
-    padding: 12px;
-    border-radius: 10px;
+    background: #ffffff;
+    padding: 14px 18px;
+    border-radius: 12px;
     margin: 0;
-    text-align: center;
-    border-left: 4px solid #7b4bd4;
+    text-align: left;
+    border: 1px solid #eae2f8;
+    border-left: 5px solid #7b4bd4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #333;
 
 }
+
+#porCategoria p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(123, 75, 212, 0.1);
+    background-color: #fdfcff;
+}
+
 
 /* Lista de gastos */
+
 #listaGastos {
+
     padding: 0;
+
 }
+
 
 #listaGastos li {
+
     list-style: none;
     background-color: #f8f8f8;
-    padding: 12px 15px;
+    padding: 12px;
     margin-bottom: 10px;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between; /* Separa el texto del botón */
-    align-items: center; /* Centra verticalmente */
-    border-left: 4px solid #ccc;
-    transition: 0.3s;
+
 }
 
-#listaGastos li:hover {
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-left-color: #7b4bd4;
-}
+
 
 /* Botón eliminar */
+
 #listaGastos button {
+
     background-color: #e74c3c;
     color: white;
     border: none;
@@ -220,11 +246,13 @@ hr {
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+
 }
 
 #listaGastos button:hover {
     background-color: #c0392b;
 }
+
 
 
 
