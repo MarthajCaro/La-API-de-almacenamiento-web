@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control de Gastos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <div class="container">
+<div class="container">
 
     <h1>Control de Gastos</h1>
 
-    
-    <input type="text" id="descripcion" placeholder="Descripción">
+    <!-- Formulario -->
+    <div class="formulario">
 
-    <input type="number" id="monto" placeholder="Monto">
+        <input type="text" id="descripcion" placeholder="Descripción">
 
-    <select id="categoria">
-        <option value="Comida">Comida</option>
-        <option value="Transporte">Transporte</option>
-        <option value="Entretenimiento">Entretenimiento</option>
-        <option value="Servicios">Servicios</option>
-        <option value="Otros">Otros</option>
-    </select>
+        <input type="number" id="monto" placeholder="Monto">
 
-    <button id="btnAgregar">Agregar Gasto</button>
+        <select id="categoria">
+            <option value="Comida">Comida</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Entretenimiento">Entretenimiento</option>
+            <option value="Servicios">Servicios</option>
+            <option value="Otros">Otros</option>
+        </select>
 
-    <hr>
-
-    
-    <h2>Total de Hoy:</h2>
-    <p id="totalHoy">$0</p>
-
-    <h2>Total del Mes:</h2>
-    <p id="totalMes">$0</p>
-
-    
-    <h2>Totales por Categoría:</h2>
-    <div id="porCategoria"></div>
-
-    <hr>
-
-    
-    <h2>Lista de Gastos</h2>
-    <ul id="listaGastos"></ul>
+        <button id="btnAgregar">Agregar</button>
 
     </div>
 
-    <script src="script.js"></script>
+
+    <hr>
+
+
+    <!-- Resumen -->
+    <div class="resumen">
+
+        <div class="tarjeta">
+            <h2>Total de Hoy</h2>
+            <p id="totalHoy">$0</p>
+        </div>
+
+
+        <div class="tarjeta">
+            <h2>Total del Mes</h2>
+            <p id="totalMes">$0</p>
+        </div>
+
+    </div>
+
+
+
+    <h2>Totales por Categoría</h2>
+
+    <div id="porCategoria"></div>
+
+
+
+    <hr>
+
+
+
+    <h2>Lista de Gastos</h2>
+
+    <ul id="listaGastos"></ul>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
